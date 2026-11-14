@@ -6,32 +6,19 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - free
   type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 02 - free
-  type: ss
   server: 138.199.55.243
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇸🇪 SE 03 - free
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+- name: 🇸🇪 SE 02 - free
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 04 - free
+- name: 🇸🇪 SE 03 - free
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -44,6 +31,20 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 SE 04 - free
+  type: ss
+  server: 62.182.193.228
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
+  udp: true
+- name: 🇸🇪 SE 05 - free
+  type: ss
+  server: creator.morteza1388m1122.ir
+  port: 29206
+  cipher: chacha20-ietf-poly1305
+  password: fQUUCljoCc
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +54,7 @@ proxy-groups:
   - 🇸🇪 SE 02 - free
   - 🇸🇪 SE 03 - free
   - 🇸🇪 SE 04 - free
+  - 🇸🇪 SE 05 - free
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +64,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - free
   - 🇸🇪 SE 03 - free
   - 🇸🇪 SE 04 - free
+  - 🇸🇪 SE 05 - free
 rules:
 - MATCH,PROXIES
