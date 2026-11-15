@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - free"
+        "🇮🇷 IR 01 - free",
+        "🇮🇷 IR 02 - free"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - free"
+        "🇮🇷 IR 01 - free",
+        "🇮🇷 IR 02 - free"
       ],
       "url": "https://www.google.com/generate_204"
     },
