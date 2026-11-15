@@ -6,16 +6,18 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - free
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  server: 146.75.59.186
+  port: 443
+  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: random
+  servername: cdn.akamai.steamstatic.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: looabomrhesamijji.global.ssl.fastly.net.
 - name: 🇹🇷 土耳其 (Turkey) 02 - free
   type: vless
   server: 151.241.226.201
@@ -28,6 +30,54 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 03 - free
+  type: vless
+  server: 146.75.59.186
+  port: 443
+  uuid: f1fa2b6a-6766-4367-b741-86e34783f5b3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn.akamai.steamstatic.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: looabomrhesamijji.global.ssl.fastly.net.
+- name: 🇹🇷 土耳其 (Turkey) 04 - free
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 05 - free
+  type: vless
+  server: 206.1.101.160
+  port: 8451
+  uuid: 666804a9-d60b-4145-8767-e9e1b0eef266
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 06 - free
+  type: vless
+  server: 185.39.204.117
+  port: 10002
+  uuid: facb802c-de2e-11f1-9a22-a3404e852f3b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tr2.vpnjantit.com
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+    headers:
+      Host: 185.39.204.117
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +85,10 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - free
   - 🇹🇷 土耳其 (Turkey) 02 - free
+  - 🇹🇷 土耳其 (Turkey) 03 - free
+  - 🇹🇷 土耳其 (Turkey) 04 - free
+  - 🇹🇷 土耳其 (Turkey) 05 - free
+  - 🇹🇷 土耳其 (Turkey) 06 - free
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +96,9 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - free
   - 🇹🇷 土耳其 (Turkey) 02 - free
+  - 🇹🇷 土耳其 (Turkey) 03 - free
+  - 🇹🇷 土耳其 (Turkey) 04 - free
+  - 🇹🇷 土耳其 (Turkey) 05 - free
+  - 🇹🇷 土耳其 (Turkey) 06 - free
 rules:
 - MATCH,PROXIES
