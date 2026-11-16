@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 RO 01 - free"
+        "🇸🇨 SC 01 - free",
+        "🇸🇨 SC 02 - free"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 RO 01 - free"
+        "🇸🇨 SC 01 - free",
+        "🇸🇨 SC 02 - free"
       ],
       "url": "https://www.google.com/generate_204"
     },
