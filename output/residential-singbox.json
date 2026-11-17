@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - free",
-        "🇩🇪 德国 (Germany) 02 (家宽) - free"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - free",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - free"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - free",
-        "🇩🇪 德国 (Germany) 02 (家宽) - free"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - free",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - free"
       ],
       "url": "https://www.google.com/generate_204"
     },
