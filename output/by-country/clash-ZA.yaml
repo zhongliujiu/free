@@ -20,6 +20,13 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 03 - free
   type: ss
+  server: 40.123.240.235
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: WTQlw0DYHp6QQjow
+  udp: true
+- name: 🇿🇦 ZA 04 - free
+  type: ss
   server: 40.123.254.236
   port: 443
   cipher: chacha20-ietf-poly1305
@@ -33,6 +40,7 @@ proxy-groups:
   - 🇿🇦 ZA 01 - free
   - 🇿🇦 ZA 02 - free
   - 🇿🇦 ZA 03 - free
+  - 🇿🇦 ZA 04 - free
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +49,6 @@ proxy-groups:
   - 🇿🇦 ZA 01 - free
   - 🇿🇦 ZA 02 - free
   - 🇿🇦 ZA 03 - free
+  - 🇿🇦 ZA 04 - free
 rules:
 - MATCH,PROXIES
