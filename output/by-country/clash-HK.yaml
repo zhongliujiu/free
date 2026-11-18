@@ -6,20 +6,21 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - free
   type: vless
-  server: 213.176.92.168
-  port: 14430
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  server: 104.21.56.202
+  port: 443
+  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ave-qualifications-choices-populations.trycloudflare.com
   network: ws
   ws-opts:
-    path: /vless
+    path: /a8b8606819ef
     headers:
-      Host: 213.176.92.168
+      Host: ave-qualifications-choices-populations.trycloudflare.com
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - free
   type: vless
-  server: skk.moe
+  server: 172.66.140.62
   port: 443
   uuid: a25a71d1-10ed-4383-855a-f269a34ca691
   udp: true
@@ -32,21 +33,34 @@ proxies:
     headers:
       Host: ave-qualifications-choices-populations.trycloudflare.com
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - free
-  type: vmess
-  server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.67.187.219
+  port: 443
+  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ave-qualifications-choices-populations.trycloudflare.com
   network: ws
   ws-opts:
-    path: /arki
+    path: /a8b8606819ef
     headers:
-      Host: 47.244.120.197
+      Host: ave-qualifications-choices-populations.trycloudflare.com
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - free
+  type: vless
+  server: 172.67.190.141
+  port: 443
+  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ave-qualifications-choices-populations.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: /a8b8606819ef
+    headers:
+      Host: ave-qualifications-choices-populations.trycloudflare.com
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - free
   type: ss
   server: 213.176.92.148
   port: 40647
@@ -62,6 +76,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - free
   - 🇭🇰 中国香港 (Hong Kong) 03 - free
   - 🇭🇰 中国香港 (Hong Kong) 04 - free
+  - 🇭🇰 中国香港 (Hong Kong) 05 - free
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,5 +86,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - free
   - 🇭🇰 中国香港 (Hong Kong) 03 - free
   - 🇭🇰 中国香港 (Hong Kong) 04 - free
+  - 🇭🇰 中国香港 (Hong Kong) 05 - free
 rules:
 - MATCH,PROXIES
