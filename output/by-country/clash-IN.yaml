@@ -32,19 +32,6 @@ proxies:
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 - free
   type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 04 - free
-  type: vless
   server: in.smrtai.top
   port: 443
   uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
@@ -55,20 +42,7 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇮🇳 印度 (India) 05 - free
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 06 - free
+- name: 🇮🇳 印度 (India) 04 - free
   type: vless
   server: 178.212.35.198
   port: 443
@@ -80,58 +54,6 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 07 - free
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 08 - free
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 09 - free
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 10 - free
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
 proxy-groups:
 - name: PROXIES
   type: select
@@ -141,12 +63,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - free
   - 🇮🇳 印度 (India) 03 - free
   - 🇮🇳 印度 (India) 04 - free
-  - 🇮🇳 印度 (India) 05 - free
-  - 🇮🇳 印度 (India) 06 - free
-  - 🇮🇳 印度 (India) 07 - free
-  - 🇮🇳 印度 (India) 08 - free
-  - 🇮🇳 印度 (India) 09 - free
-  - 🇮🇳 印度 (India) 10 - free
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -156,11 +72,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - free
   - 🇮🇳 印度 (India) 03 - free
   - 🇮🇳 印度 (India) 04 - free
-  - 🇮🇳 印度 (India) 05 - free
-  - 🇮🇳 印度 (India) 06 - free
-  - 🇮🇳 印度 (India) 07 - free
-  - 🇮🇳 印度 (India) 08 - free
-  - 🇮🇳 印度 (India) 09 - free
-  - 🇮🇳 印度 (India) 10 - free
 rules:
 - MATCH,PROXIES
