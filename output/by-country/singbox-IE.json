@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - free"
+        "🇮🇪 IE 01 - free",
+        "🇮🇪 IE 02 - free",
+        "🇮🇪 IE 03 - free",
+        "🇮🇪 IE 04 - free"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - free"
+        "🇮🇪 IE 01 - free",
+        "🇮🇪 IE 02 - free",
+        "🇮🇪 IE 03 - free",
+        "🇮🇪 IE 04 - free"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇾 CY 01 - free
-  type: vless
-  server: 45.86.60.174
-  port: 16443
-  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
+- name: 🇹🇷 土耳其 (Turkey) 01 - free
+  type: ss
+  server: 31.210.78.66
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: o3-9Eg79umh4CaY8sWC7b3
   udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇾 CY 01 - free
+  - 🇹🇷 土耳其 (Turkey) 01 - free
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 CY 01 - free
+  - 🇹🇷 土耳其 (Turkey) 01 - free
 rules:
 - MATCH,PROXIES
