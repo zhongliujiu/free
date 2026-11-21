@@ -4,31 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 LU 01 - free
-  type: vless
-  server: 92.223.84.254
-  port: 443
-  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
+- name: 🇧🇷 BR 01 - free
+  type: vmess
+  server: 103.14.27.207
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: subgift.gcorecdn.com
-  network: ws
-  ws-opts:
-    path: /t.me-SubGift
-    headers:
-      Host: subgift.gcorecdn.com
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 LU 01 - free
+  - 🇧🇷 BR 01 - free
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 LU 01 - free
+  - 🇧🇷 BR 01 - free
 rules:
 - MATCH,PROXIES
