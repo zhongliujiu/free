@@ -5,17 +5,10 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - free
-  type: ss
-  server: 213.176.92.148
-  port: 40647
-  cipher: aes-256-gcm
-  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - free
   type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
   alterId: 0
   cipher: auto
   udp: true
@@ -23,7 +16,22 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - free
+  type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - free
@@ -42,9 +50,9 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - free
   type: vmess
-  server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
   alterId: 0
   cipher: auto
   udp: true
@@ -52,10 +60,17 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /arki?ed=2048
+    path: /
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - free
+  type: ss
+  server: 213.176.92.148
+  port: 40647
+  cipher: aes-256-gcm
+  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - free
   type: vmess
   server: 47.244.120.197
   port: 36703
@@ -70,6 +85,20 @@ proxies:
     path: /arki
     headers:
       Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - free
+  type: vless
+  server: 43.129.80.179
+  port: 8443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,6 +109,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - free
   - 🇭🇰 中国香港 (Hong Kong) 04 - free
   - 🇭🇰 中国香港 (Hong Kong) 05 - free
+  - 🇭🇰 中国香港 (Hong Kong) 06 - free
+  - 🇭🇰 中国香港 (Hong Kong) 07 - free
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,5 +121,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - free
   - 🇭🇰 中国香港 (Hong Kong) 04 - free
   - 🇭🇰 中国香港 (Hong Kong) 05 - free
+  - 🇭🇰 中国香港 (Hong Kong) 06 - free
+  - 🇭🇰 中国香港 (Hong Kong) 07 - free
 rules:
 - MATCH,PROXIES
