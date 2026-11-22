@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 VN 01 - free",
-        "🇻🇳 VN 02 - free"
+        "🇮🇶 IQ 01 - free"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 VN 01 - free",
-        "🇻🇳 VN 02 - free"
+        "🇮🇶 IQ 01 - free"
       ],
       "url": "https://www.google.com/generate_204"
     },
