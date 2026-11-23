@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - free"
+        "🇮🇶 IQ 01 - free"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - free"
+        "🇮🇶 IQ 01 - free"
       ],
       "url": "https://www.google.com/generate_204"
     },
