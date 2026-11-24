@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - free"
+        "🇪🇪 EE 01 - free"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - free"
+        "🇪🇪 EE 01 - free"
       ],
       "url": "https://www.google.com/generate_204"
     },
