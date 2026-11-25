@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 - free"
+        "🇱🇰 LK 01 - free",
+        "🇱🇰 LK 02 - free",
+        "🇱🇰 LK 03 - free",
+        "🇱🇰 LK 04 - free",
+        "🇱🇰 LK 05 - free"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 - free"
+        "🇱🇰 LK 01 - free",
+        "🇱🇰 LK 02 - free",
+        "🇱🇰 LK 03 - free",
+        "🇱🇰 LK 04 - free",
+        "🇱🇰 LK 05 - free"
       ],
       "url": "https://www.google.com/generate_204"
     },
