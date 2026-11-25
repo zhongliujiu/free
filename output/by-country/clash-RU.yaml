@@ -6,28 +6,14 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - free
   type: vless
-  server: 147.45.175.81
+  server: 136.148.83.70
   port: 443
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  uuid: 00000000-0000-0001-0000-000000000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xsru2.freeddns.org
-  network: ws
-  ws-opts:
-    path: /wsru
-    headers:
-      Host: xsru2.freeddns.org
+  servername: aszbk-ru-78dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 02 - free
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 03 - free
   type: vless
   server: 136.148.83.70
   port: 443
@@ -36,7 +22,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: aszbk-ru-78dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 04 - free
+- name: 🇷🇺 俄罗斯 (Russia) 03 - free
   type: vless
   server: 136.148.83.69
   port: 443
@@ -45,23 +31,16 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 05 - free
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - free
+- name: 🇷🇺 俄罗斯 (Russia) 04 - free
   type: vless
-  server: 136.148.83.70
+  server: 136.148.83.69
   port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aszbk-ru-78dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 07 - free
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 05 - free
   type: vless
   server: 147.45.221.225
   port: 443
@@ -75,24 +54,20 @@ proxies:
     path: /media/ws/
     headers:
       Host: 147.45.221.225
-- name: 🇷🇺 俄罗斯 (Russia) 08 - free
+- name: 🇷🇺 俄罗斯 (Russia) 06 - free
   type: vless
-  server: 136.148.83.69
+  server: 147.45.175.81
   port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 09 - free
-  type: vless
-  server: 136.148.83.70
-  port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aszbk-ru-78dc.my-fade.cloud
+  servername: xsru2.freeddns.org
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru2.freeddns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -104,9 +79,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - free
   - 🇷🇺 俄罗斯 (Russia) 05 - free
   - 🇷🇺 俄罗斯 (Russia) 06 - free
-  - 🇷🇺 俄罗斯 (Russia) 07 - free
-  - 🇷🇺 俄罗斯 (Russia) 08 - free
-  - 🇷🇺 俄罗斯 (Russia) 09 - free
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -118,8 +90,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - free
   - 🇷🇺 俄罗斯 (Russia) 05 - free
   - 🇷🇺 俄罗斯 (Russia) 06 - free
-  - 🇷🇺 俄罗斯 (Russia) 07 - free
-  - 🇷🇺 俄罗斯 (Russia) 08 - free
-  - 🇷🇺 俄罗斯 (Russia) 09 - free
 rules:
 - MATCH,PROXIES
