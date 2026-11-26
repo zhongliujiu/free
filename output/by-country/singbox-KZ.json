@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 KZ 01 - free"
+        "🇰🇿 KZ 01 - free",
+        "🇰🇿 KZ 02 - free",
+        "🇰🇿 KZ 03 - free"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 KZ 01 - free"
+        "🇰🇿 KZ 01 - free",
+        "🇰🇿 KZ 02 - free",
+        "🇰🇿 KZ 03 - free"
       ],
       "url": "https://www.google.com/generate_204"
     },
