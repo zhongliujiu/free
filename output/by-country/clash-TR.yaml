@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - free
   type: vless
-  server: leviko-tr3795.shopingggg.ir
+  server: turkey-ip1.mmdaqaorg.xyz
   port: 50738
   uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   udp: true
@@ -15,26 +15,17 @@ proxies:
   servername: turkey-ip1.mmdaqaorg.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - free
   type: vless
-  server: turkey-ip1.mmdaqaorg.xyz
-  port: 50738
-  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: turkey-ip1.mmdaqaorg.xyz
-- name: 🇹🇷 土耳其 (Turkey) 03 - free
-  type: vless
-  server: raha.ertebatgoostar.ir
-  port: 80
-  uuid: 8c49bed5-dbb2-4c0d-a2f1-2577b12c6c66
+  server: v2new.nimbaha9.ir
+  port: 8080
+  uuid: f279c19a-b324-40cf-af57-049f9b1b68f2
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /XDS45
     headers:
-      Host: ''
+      Host: v2new.nimbaha9.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - free
   - 🇹🇷 土耳其 (Turkey) 02 - free
-  - 🇹🇷 土耳其 (Turkey) 03 - free
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - free
   - 🇹🇷 土耳其 (Turkey) 02 - free
-  - 🇹🇷 土耳其 (Turkey) 03 - free
 rules:
 - MATCH,PROXIES
